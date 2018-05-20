@@ -7,12 +7,12 @@
     <parent>
         <groupId>net.onebean</groupId>
         <artifactId>net.onebean.spring.boot</artifactId>
-        <version>1.1.0.2.RELEASE</version>
+        <version>1.1.0.3.RELEASE    </version>
     </parent>
     <artifactId>net.onebean.aliyun.sms</artifactId>
     <packaging>jar</packaging>
 
-    <name>net.onebean.aliyun.oss</name>
+    <name>net.onebean.aliyun.sms</name>
     <description>aliyun oss for onebean</description>
 
     <distributionManagement>
