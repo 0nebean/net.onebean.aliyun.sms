@@ -8,7 +8,7 @@ import com.aliyuncs.exceptions.ClientException;
 import com.aliyuncs.http.MethodType;
 import com.aliyuncs.profile.DefaultProfile;
 import com.aliyuncs.profile.IClientProfile;
-import net.onebean.component.aliyun.prop.PropUtils;
+import net.onebean.util.PropUtil;
 
 /**
  *@author 0neBean
@@ -16,8 +16,8 @@ import net.onebean.component.aliyun.prop.PropUtils;
  */
 public class AliyunSMSUtils {
 
-    private final static String accessKeyId = PropUtils.getInstance().getConfing("aliyun.oss.accessKeyId");
-    private final static String accessKeySecret = PropUtils.getInstance().getConfing("aliyun.oss.secretAccessKey");
+    private final static String accessKeyId = PropUtil.getInstance().getConfig("aliyun.oss.accessKeyId",PropUtil.PUBLIC_CONF_ALIYUN);
+    private final static String accessKeySecret = PropUtil.getInstance().getConfig("aliyun.oss.secretAccessKey",PropUtil.PUBLIC_CONF_ALIYUN);
 
     /**
      * 发送短信接口
