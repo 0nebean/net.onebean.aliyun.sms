@@ -1,8 +1,15 @@
-* # 配置
-#### 使用该模块需要引用配置项,并做相应配置,配置项参考如下:
+
+Introduction
+---
+- 对阿里云短信API的调用封装
+
+Documentation
+---
+- Config
+#### chemical-el框架使用Apollo作为注册中心 ,以下是需要的配置namespace
 [public-conf.aliyun-oss](https://github.com/0nebean/public.conf/blob/master/conf/public-conf.aliyun-oss.properties)
 
-
+- API
 #### 发送短信的方法 见AliyunSMSUtils:
 ```java
     /**
